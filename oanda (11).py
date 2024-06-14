@@ -1,9 +1,4 @@
-# =============================================================================
-# OANDA API testing
-# Author : Mayank Rasu
 
-# Please report bug/issues in the Q&A section
-# =============================================================================
 
 """install the oanda python library
 !pip install oandapyV20 
