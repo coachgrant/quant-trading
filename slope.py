@@ -1,9 +1,4 @@
-# =============================================================================
-# Calculate slope of n successive points on a time series
-# Author : Mayank Rasu (http://rasuquant.com/wp/)
 
-# Please report bug/issues in the Q&A section
-# =============================================================================
 #!pip install statsmodels
 # Import necesary libraries
 import yfinance as yf
