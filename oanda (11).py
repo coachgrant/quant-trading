@@ -13,7 +13,7 @@ import oandapyV20.endpoints.trades as trades
 import pandas as pd
 
 #initiating API connection and defining trade parameters
-token_path = "D:\\Udemy\\Quantitative Investing Using Python\\7_API Trading\\oanda_key.txt"
+token_path = ""
 client = oandapyV20.API(access_token=open(token_path,'r').read(),environment="practice")
 
 
@@ -31,7 +31,7 @@ ohlc_df = ohlc_df.apply(pd.to_numeric)
 
 #streaming data
 params = {"instruments": "USD_JPY"}
-account_id = "101-002-12759455-001"
+account_id = ""
 r = pricing.PricingInfo(accountID=account_id, params=params)
 i=0
 while i <=20:
@@ -89,7 +89,7 @@ def ATR(DF,n):
 def market_order(instrument,units,sl):
     """units can be positive or negative, stop loss (in pips) added/subtracted to price """
     params = {"instruments": instrument}
-    account_id = "101-002-12759455-001"
+    account_id = ""
     r = pricing.PricingInfo(accountID=account_id, params=params)
     rv = client.request(r)
     if units > 0:
